@@ -1,0 +1,19 @@
+<div class = "row">
+    <aside class = "col-md-4">
+        <section class="user_info">
+            <h1>
+                <%= gravatar_for(@user) %>
+                <%= @user.name %>
+            </h1>
+        </section>
+    </aside>
+</div>
+
+<div>
+    <%= link_to 'Home', root_path %>
+</div>
+
+<div align="center">
+<%= @user.updated_at %> |
+<%= @user.created_at %>
+</div>
